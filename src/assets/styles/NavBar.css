@@ -1,3 +1,45 @@
-div {
-  display: flex;
+nav {
+    width: 100%;
+    color: #fff;
+    height: 48px;
+}
+nav ul {
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+nav ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 1%;
+}
+
+nav ul #nav_left {
+    width: 10%;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 19px;
+}
+
+nav ul #nav_title {
+    width: 80%;
+    justify-content: center;
+}
+
+nav ul #nav_mic {
+    margin-right: 4%;
+}
+
+a {
+    margin-right: 10%;
+} 
+.active {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
 }
