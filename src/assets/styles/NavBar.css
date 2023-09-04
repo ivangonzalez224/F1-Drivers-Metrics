@@ -16,18 +16,23 @@ nav ul li {
     list-style: none;
     display: flex;
     align-items: center;
-    margin-right: 2%;
+    margin-right: 1%;
 }
 
 nav ul #nav_left {
     width: 10%;
     justify-content: flex-start;
     align-items: center;
+    font-size: 19px;
 }
 
 nav ul #nav_title {
     width: 80%;
     justify-content: center;
+}
+
+nav ul #nav_mic {
+    margin-right: 4%;
 }
 
 a {
