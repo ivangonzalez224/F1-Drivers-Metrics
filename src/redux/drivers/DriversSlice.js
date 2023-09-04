@@ -25,7 +25,7 @@ const driversSlice = createSlice({
   initialState,
   reducers: {
     checkDriver: (state, action) => {
-       
+
     },
   },
   extraReducers: (builder) => {

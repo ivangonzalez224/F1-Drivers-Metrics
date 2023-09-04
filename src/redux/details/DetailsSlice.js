@@ -24,7 +24,7 @@ const detailsSlice = createSlice({
   initialState,
   reducers: {
     changeDetail: (state, action) => {
-       
+
     },
   },
   extraReducers: (builder) => {
