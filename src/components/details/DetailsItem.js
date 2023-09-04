@@ -1,7 +1,5 @@
-const DetailsItem = () => {
-  return (
-    <li />
-  );
-};
+const DetailsItem = () => (
+  <li />
+);
 
 export default DetailsItem;

@@ -1,4 +1,4 @@
-//import HomeLogic from '../home/HomeLogic';
+// import HomeLogic from '../home/HomeLogic';
 import '../../assets/styles/home.css';
 
 const Home = () => (
