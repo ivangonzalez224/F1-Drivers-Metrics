@@ -1,9 +1,9 @@
-import HomeLogic from '../home/HomeLogic';
+//import HomeLogic from '../home/HomeLogic';
 import '../../assets/styles/home.css';
 
 const Home = () => (
   <div className="main_home">
-    <HomeLogic />
+    <h1>home</h1>
   </div>
 );
 

@@ -1,11 +1,11 @@
-import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
 import Home from './components/pages/Home';
 import Details from './components/pages/Details';
 
 const App = () => (
-  <BrowserRouter>
+  <div>
     <NavBar />
     <main>
       <Routes>
@@ -13,7 +13,7 @@ const App = () => (
         <Route path="/details" element={<Details />} />
       </Routes>
     </main>
-  </BrowserRouter>
+  </div>
 );
 
 export default App;
