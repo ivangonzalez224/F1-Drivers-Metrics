@@ -5,16 +5,14 @@ import { FaMicrophone, FaRegSun } from 'react-icons/fa';
 const NavBar = () => (
   <nav>
     <ul>
-      <li>
+      <li id="nav_left">
         <NavLink to="/">ᐸ</NavLink>
-      </li>
-      <li>
-        <h4>F1</h4>
+        <span>F1</span>
       </li>
       <li id="nav_title">
-        <h5>Drivers</h5>
+        <span>Drivers</span>
       </li>
-      <li>
+      <li id="nav_mic">
         <FaMicrophone style={{ color: '#fff' }} />
       </li>
       <li>

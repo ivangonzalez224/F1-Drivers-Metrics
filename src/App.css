@@ -6,7 +6,12 @@ body {
   background-color: #fafafa;
 }
 
-.main {
+.main_container {
   width: 100%;
+  background-color: #ec4c8b;
   max-width: 765px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
