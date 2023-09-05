@@ -5,23 +5,67 @@
   font-family: 'Lato', sans-serif;
   margin-top: 2%;
   box-sizing: border-box;
-  border: #0987ff solid 5px;
 }
 
 .home_lowerContainer {
   width: 100%;
+  background-color: #fa5294;
 }
 
 .home_topGeneral {
   width: 100%;
+  margin-bottom: 2%;
   box-sizing: border-box;
-  border: #1234ff solid 5px;
   display: flex;
   justify-content: flex-start;
+  padding: 3%;
 }
 
 .home_topGeneral img {
   width: 40%;
   margin: 0 7%;
-  border: #0987ff solid 5px;
+}
+
+#home_statsContainer {
+  width: 100%;
+  background-color: #e04482;
+  padding: 2% 0;
+}
+
+#home_stats {
+  margin-left: 1%;
+  font-weight: 900;
+}
+
+.home_listItems {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: #e04482;
+  box-sizing: border-box;
+}
+
+.home_itemContainer {
+  width: 90%;
+  padding: 1% 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.am, .mc, .rb {
+  background-color: aqua;
+}
+
+.home_dataItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 25%;
+}
+
+.home_construcName {
+  font-size: 19px;
+  font-weight: 900;
 }

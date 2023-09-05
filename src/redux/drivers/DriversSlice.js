@@ -8,9 +8,7 @@ export const getDrivers = createAsyncThunk(
       const response = await axios.get(
         'https://script.google.com/macros/s/AKfycby7bXHqq5-CZsIVFFdVuuTY_HssvDJ1OB5EI1KoJWZQWrtIhIo-Q6WFFoOv_Fb97w7l/exec',
       );
-      const data = response;
-      const endData = data.data.data;
-      console.log(endData);
+      const endData = response.data.data;
       return endData;
     } catch (error) {
       return rejectWithValue(error.message);

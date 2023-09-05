@@ -1,25 +1,30 @@
 import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
 import { FaRegArrowAltCircleRight } from 'react-icons/fa';
 
-const HomeItem = ({ driverId, constructorName, constructorImg, numDrivers }) => {
-  const dispatch = useDispatch();
-
-  return (
+const HomeItem = (
+  {
+    constructorName, constructorImg, numDrivers,
+  },
+) => (
+  <div
+    className="home_itemContainer"
+    style={
+      {
+        background: `url(${constructorImg})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center',
+      }
+    }
+  >
     <div>
-      <div style={{ backgroundImage: {constructorImg} }}>
-        <FaRegArrowAltCircleRight style={{ color: '#fff' }} />
-      </div>
-      <div>
-        <h4>{constructorName}</h4>
-        <span>{numDrivers}</span>       
-      </div>
+      <FaRegArrowAltCircleRight style={{ cursor: 'pointer', color: '#fff' }} />
     </div>
-  );
-};
+    <div className="home_dataItem">
+      <span className="home_construcName">{constructorName}</span>
+      <span>{numDrivers}</span>
+    </div>
+  </div>
+);
 
 HomeItem.propTypes = {
-  driverId: PropTypes.string.isRequired,
   constructorName: PropTypes.string.isRequired,
   constructorImg: PropTypes.string.isRequired,
   numDrivers: PropTypes.string.isRequired,

@@ -14,18 +14,20 @@ const HomeList = () => {
   });
 
   return (
-    <div className='home_lowerContainer'>
+    <div className="home_lowerContainer">
       <div className="home_topGeneral">
         <img alt="formula 1 logo" src={f1Logo} />
         <div>
-          <h3>Formula 1</h3>
+          <h3>FORMULA 1</h3>
           <div>
             <span>50</span>
             <span>drivers</span>
           </div>
         </div>
       </div>
-      <span>STATS BY CONSTRUCTOR</span>
+      <div id="home_statsContainer">
+        <span id="home_stats">STATS BY CONSTRUCTOR</span>
+      </div>
       <div className="home_listItems">
         {driverItems.map((driver) => (
           <HomeItem
