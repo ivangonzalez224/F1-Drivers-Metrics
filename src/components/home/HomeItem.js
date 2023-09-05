@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
-import { useDispatch, useSelector } from 'react-redux';
-import { checkDriver } from '../../redux/drivers/DriversSlice';
+import { useDispatch } from 'react-redux';
 import { FaRegArrowAltCircleRight } from 'react-icons/fa';
 
 const HomeItem = ({ driverId, constructorName, constructorImg, numDrivers }) => {
@@ -17,6 +16,13 @@ const HomeItem = ({ driverId, constructorName, constructorImg, numDrivers }) => 
       </div>
     </div>
   );
+};
+
+HomeItem.propTypes = {
+  driverId: PropTypes.string.isRequired,
+  constructorName: PropTypes.string.isRequired,
+  constructorImg: PropTypes.string.isRequired,
+  numDrivers: PropTypes.string.isRequired,
 };
 
 export default HomeItem;
