@@ -15,6 +15,7 @@ const HomeList = () => {
 
   const sumTot = driverItems[driverItems.length - 1];
   driverItems = driverItems.slice(0, -1);
+
   return (
     <div className="home_lowerContainer">
       <div className="home_topGeneral">
@@ -38,6 +39,7 @@ const HomeList = () => {
             constructorImg={driver.constructor_img}
             constructorName={driver.constructor_name}
             numDrivers={driver.num_drivers}
+            contIds={driverItems.indexOf(driver) + 1}
           />
         ))}
       </div>

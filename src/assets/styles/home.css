@@ -76,3 +76,11 @@ a {
   color: #fff;
   text-decoration: none;
 }
+
+.light_pink {
+  background-color: #a3355f;
+}
+
+.dark_pink {
+  background-color: rgb(219, 65, 127);
+}

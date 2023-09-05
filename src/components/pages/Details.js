@@ -1,4 +1,4 @@
-//import DetailsLogic from '../details/DetailsLogic';
+// import DetailsLogic from '../details/DetailsLogic';
 import '../../assets/styles/details.css';
 
 const Details = () => (
