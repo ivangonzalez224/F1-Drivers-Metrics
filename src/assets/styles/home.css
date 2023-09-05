@@ -71,3 +71,8 @@
   font-size: 19px;
   font-weight: 900;
 }
+
+a {
+  color: #fff;
+  text-decoration: none;
+}

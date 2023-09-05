@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
 import { FaRegArrowAltCircleRight } from 'react-icons/fa';
 
 const HomeItem = (
@@ -6,7 +7,8 @@ const HomeItem = (
     constructorName, constructorImg, numDrivers,
   },
 ) => (
-  <div
+  <NavLink
+    to="/details"
     className="home_itemContainer"
     style={
       {
@@ -21,7 +23,7 @@ const HomeItem = (
       <span className="home_construcName">{constructorName}</span>
       <span>{numDrivers}</span>
     </div>
-  </div>
+  </NavLink>
 );
 
 HomeItem.propTypes = {
