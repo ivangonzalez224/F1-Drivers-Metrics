@@ -2,6 +2,7 @@ import { React, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import HomeItem from './HomeItem';
 import { getDrivers } from '../../redux/drivers/DriversSlice';
+import f1Logo from '../../assets/images/f1Icon.png';
 
 const HomeList = () => {
   const dispatch = useDispatch();
@@ -13,19 +14,19 @@ const HomeList = () => {
   });
 
   return (
-    <div>
-      <div className='home_topGeneral'>
-        <img></img>
+    <div className='home_lowerContainer'>
+      <div className="home_topGeneral">
+        <img alt="formula 1 logo" src={f1Logo} />
         <div>
           <h3>Formula 1</h3>
           <div>
-            <span></span>
+            <span>50</span>
             <span>drivers</span>
           </div>
         </div>
       </div>
       <span>STATS BY CONSTRUCTOR</span>
-      <div className='home_listItems'>
+      <div className="home_listItems">
         {driverItems.map((driver) => (
           <HomeItem
             key={driver.id}
@@ -33,7 +34,7 @@ const HomeList = () => {
             constructorImg={driver.constructor_img}
             constructorName={driver.constructor_name}
             numDrivers={driver.num_drivers}
-          />  
+          />
         ))}
       </div>
     </div>

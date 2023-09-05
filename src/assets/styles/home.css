@@ -1,4 +1,27 @@
 .main_home {
   width: 100%;
   display: flex;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  margin-top: 2%;
+  box-sizing: border-box;
+  border: #0987ff solid 5px;
+}
+
+.home_lowerContainer {
+  width: 100%;
+}
+
+.home_topGeneral {
+  width: 100%;
+  box-sizing: border-box;
+  border: #1234ff solid 5px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.home_topGeneral img {
+  width: 40%;
+  margin: 0 7%;
+  border: #0987ff solid 5px;
 }
