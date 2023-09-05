@@ -2,14 +2,18 @@ import axios from 'axios';
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 export const getDrivers = createAsyncThunk(
-  'driverss/getDrivers',
+  'drivers/getDrivers',
   async (arg, { rejectWithValue }) => {
     try {
       const response = await axios.get(
-        'https://ergast.com/api/f1/drivers.json',
+        'https://script.google.com/macros/s/AKfycby7bXHqq5-CZsIVFFdVuuTY_HssvDJ1OB5EI1KoJWZQWrtIhIo-Q6WFFoOv_Fb97w7l/exec',
       );
-      const data = response;
-      const endData = data.data.MRData.DriverTable.Drivers;
+      const endData = response.data.data;
+      let sum = 0;
+      endData.forEach((amount) => {
+        sum += amount.num_drivers;
+      });
+      endData.push(sum);
       return endData;
     } catch (error) {
       return rejectWithValue(error.message);
