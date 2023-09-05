@@ -9,7 +9,8 @@ export const getDetails = createAsyncThunk(
         'https://script.google.com/macros/s/AKfycbywePr0t-SCseAjMs7DjYBmaXms2K2ov7JIXshjAXPDZhWrLRK2s7PfEli8QAcKNOiTPw/exec',
       );
       const data = response;
-      return data.data;
+      console.log(data.data.data);
+      return data.data.data;
     } catch (error) {
       return rejectWithValue(error.message);
     }

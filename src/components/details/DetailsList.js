@@ -15,11 +15,11 @@ const DetailsList = () => {
   return (
     <div className="details_lowerContainer">
       <div className="details_topGeneral">
-        <img alt="constructor car" src={f1Logo} />
+        <img alt="constructor car" src="" />
         <div id="details_sum">
           <span id="details_title">FORMULA 1</span>
           <div>
-            <span>{sumTot}</span>
+            <span>50</span>
             <span> drivers</span>
           </div>
         </div>
