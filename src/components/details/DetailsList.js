@@ -34,7 +34,7 @@ const DetailsList = () => {
             seasonId={season.id}
             constructorName={season.constructor_name}
             numDrivers={season.num_drivers}
-            seasonItem={season.season}
+            seasonName={season.season}
           />
         ))}
       </div>
