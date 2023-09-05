@@ -6,7 +6,7 @@ export const getDetails = createAsyncThunk(
   async (arg, { rejectWithValue }) => {
     try {
       const response = await axios.get(
-        'https://ergast.com/api/f1/2023/constructors/williams/drivers',
+        'https://script.google.com/macros/s/AKfycbywePr0t-SCseAjMs7DjYBmaXms2K2ov7JIXshjAXPDZhWrLRK2s7PfEli8QAcKNOiTPw/exec',
       );
       const data = response;
       return data.data;
