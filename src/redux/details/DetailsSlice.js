@@ -6,10 +6,10 @@ export const getDetails = createAsyncThunk(
   async (arg, { rejectWithValue }) => {
     try {
       const response = await axios.get(
-        'https://ergast.com/api/f1/2023/constructors/williams/drivers',
+        'https://script.google.com/macros/s/AKfycbywePr0t-SCseAjMs7DjYBmaXms2K2ov7JIXshjAXPDZhWrLRK2s7PfEli8QAcKNOiTPw/exec',
       );
       const data = response;
-      return data.data;
+      return data.data.data;
     } catch (error) {
       return rejectWithValue(error.message);
     }
@@ -22,11 +22,6 @@ const initialState = {
 const detailsSlice = createSlice({
   name: 'detail',
   initialState,
-  reducers: {
-    changeDetail: (state, action) => {
-
-    },
-  },
   extraReducers: (builder) => {
     builder.addCase(getDetails.fulfilled, (state, action) => {
       state.detailItems = action.payload;
@@ -36,5 +31,4 @@ const detailsSlice = createSlice({
     });
   },
 });
-export const { changeDetail } = detailsSlice.actions;
 export default detailsSlice.reducer;

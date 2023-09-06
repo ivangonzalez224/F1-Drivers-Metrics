@@ -4,12 +4,12 @@ import { FaRegArrowAltCircleRight } from 'react-icons/fa';
 
 const HomeItem = (
   {
-    constructorName, constructorImg, numDrivers, driverId, contIds,
+    constructorName, constructorImg, numDrivers, contIds,
   },
 ) => (
   <div className={6 % contIds === 0 && contIds !== 1 ? 'light_pink' : 'dark_pink'}>
     <NavLink
-      to="/details"
+      to={`/details/${constructorName.replace(' ', '_')}`}
       className="home_itemContainer"
       style={
         {
@@ -31,9 +31,8 @@ const HomeItem = (
 HomeItem.propTypes = {
   constructorName: PropTypes.string.isRequired,
   constructorImg: PropTypes.string.isRequired,
-  numDrivers: PropTypes.string.isRequired,
+  numDrivers: PropTypes.number.isRequired,
   contIds: PropTypes.number.isRequired,
-  driverId: PropTypes.string.isRequired,
 };
 
 export default HomeItem;

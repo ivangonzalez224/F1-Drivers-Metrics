@@ -27,11 +27,6 @@ const initialState = {
 const driversSlice = createSlice({
   name: 'driver',
   initialState,
-  reducers: {
-    checkDriver: (state, action) => {
-
-    },
-  },
   extraReducers: (builder) => {
     builder.addCase(getDrivers.fulfilled, (state, action) => {
       state.driverItems = action.payload;

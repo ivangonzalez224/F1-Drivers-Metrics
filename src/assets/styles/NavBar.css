@@ -6,7 +6,7 @@ nav {
 
 nav ul {
   width: 100%;
-  padding: 1%;
+  padding: 0 1%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -21,23 +21,26 @@ nav ul li {
 }
 
 nav ul #nav_left {
-  width: 10%;
+  width: 25%;
+  display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-size: 19px;
+  font-size: 18px;
 }
 
 nav ul #nav_title {
-  width: 80%;
+  width: 50%;
   justify-content: center;
 }
 
 nav ul #nav_mic {
-  margin-right: 4%;
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 a {
-  margin-right: 10%;
+  margin-right: 3%;
 }
 
 .active {
