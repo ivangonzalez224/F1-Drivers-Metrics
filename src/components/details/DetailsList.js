@@ -1,9 +1,11 @@
 import { React, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { useParams } from 'react-router-dom';
 import DetailsItem from './DetailsItem';
 import { getDetails } from '../../redux/details/DetailsSlice';
 
 const DetailsList = () => {
+  let { driverId } = useParams();
   const dispatch = useDispatch();
   const { detailItems } = useSelector((store) => store.details);
   useEffect(() => {
@@ -11,7 +13,7 @@ const DetailsList = () => {
       dispatch(getDetails());
     }
   });
-
+  console.log(driverId);
   return (
     <div className="details_lowerContainer">
       <div className="details_topGeneral">
@@ -35,6 +37,7 @@ const DetailsList = () => {
             constructorName={season.constructor_name}
             numDrivers={season.num_drivers}
             seasonName={season.season}
+            contIds={detailItems.indexOf(season)}
           />
         ))}
       </div>

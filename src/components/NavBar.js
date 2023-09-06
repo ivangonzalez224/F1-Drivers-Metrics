@@ -10,7 +10,7 @@ const NavBar = () => (
         <span>F1</span>
       </li>
       <li id="nav_title">
-        <span>Drivers</span>
+        <span>most drivers</span>
       </li>
       <li id="nav_mic">
         <FaMicrophone style={{ color: '#fff' }} />

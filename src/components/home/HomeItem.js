@@ -9,7 +9,7 @@ const HomeItem = (
 ) => (
   <div className={6 % contIds === 0 && contIds !== 1 ? 'light_pink' : 'dark_pink'}>
     <NavLink
-      to="/details"
+      to={`/details/${driverId}`}
       className="home_itemContainer"
       style={
         {
@@ -31,7 +31,7 @@ const HomeItem = (
 HomeItem.propTypes = {
   constructorName: PropTypes.string.isRequired,
   constructorImg: PropTypes.string.isRequired,
-  numDrivers: PropTypes.string.isRequired,
+  numDrivers: PropTypes.number.isRequired,
   contIds: PropTypes.number.isRequired,
   driverId: PropTypes.string.isRequired,
 };
