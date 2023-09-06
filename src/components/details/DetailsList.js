@@ -5,23 +5,26 @@ import DetailsItem from './DetailsItem';
 import { getDetails } from '../../redux/details/DetailsSlice';
 
 const DetailsList = () => {
-  let { driverId } = useParams();
+  const { driverId } = useParams();
   const dispatch = useDispatch();
   const { detailItems } = useSelector((store) => store.details);
+  const { driverItems } = useSelector((store) => store.drivers);
   useEffect(() => {
     if (detailItems.length === 0) {
       dispatch(getDetails());
     }
   });
-  console.log(driverId);
+  const newDrivers = driverItems.filter((item) => item.constructor_name === driverId);
+  const newDetails = detailItems.filter((item) => item.constructor_name === driverId);
+
   return (
     <div className="details_lowerContainer">
       <div className="details_topGeneral">
-        <img alt="constructor car" src="" />
+        <img alt="constructor car" src={newDrivers[0].constructor_img} />
         <div id="details_sum">
-          <span id="details_title">FORMULA 1</span>
+          <span id="details_title">{newDrivers[0].constructor_name.replace('_', ' ')}</span>
           <div>
-            <span>50</span>
+            <span>{newDrivers[0].num_drivers}</span>
             <span> drivers</span>
           </div>
         </div>
@@ -30,10 +33,9 @@ const DetailsList = () => {
         <span id="details_stats">SEASONS:  2023 - 2014</span>
       </div>
       <div className="details_listItems">
-        {detailItems.map((season) => (
+        {newDetails.map((season) => (
           <DetailsItem
             key={season.id}
-            seasonId={season.id}
             constructorName={season.constructor_name}
             numDrivers={season.num_drivers}
             seasonName={season.season}

@@ -3,7 +3,7 @@ import { FaRegArrowAltCircleRight } from 'react-icons/fa';
 
 const DetailsItem = (
   {
-    numDrivers, seasonId, seasonName, contIds,
+    numDrivers, seasonName, contIds,
   },
 ) => (
   <div className={contIds % 2 === 0 ? 'details_itemContainer light' : 'details_itemContainer dark'}>
@@ -19,9 +19,8 @@ const DetailsItem = (
 );
 
 DetailsItem.propTypes = {
-  seasonId: PropTypes.string.isRequired,
-  numDrivers: PropTypes.string.isRequired,
-  seasonName: PropTypes.string.isRequired,
+  numDrivers: PropTypes.number.isRequired,
+  seasonName: PropTypes.number.isRequired,
   contIds: PropTypes.number.isRequired,
 };
 

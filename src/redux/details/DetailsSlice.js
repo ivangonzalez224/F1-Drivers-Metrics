@@ -31,5 +31,4 @@ const detailsSlice = createSlice({
     });
   },
 });
-export const { changeDetail } = detailsSlice.actions;
 export default detailsSlice.reducer;

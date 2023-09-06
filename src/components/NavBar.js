@@ -7,15 +7,13 @@ const NavBar = () => (
     <ul>
       <li id="nav_left">
         <NavLink to="/">ᐸ</NavLink>
-        <span>F1</span>
+        <span>2023 - 2014</span>
       </li>
       <li id="nav_title">
         <span>most drivers</span>
       </li>
       <li id="nav_mic">
-        <FaMicrophone style={{ color: '#fff' }} />
-      </li>
-      <li>
+        <FaMicrophone style={{ color: '#fff', margin: '0 15% 0 0' }} />
         <FaRegSun style={{ color: '#fff' }} />
       </li>
     </ul>

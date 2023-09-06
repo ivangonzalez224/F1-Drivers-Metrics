@@ -37,7 +37,7 @@ const HomeList = () => {
             key={driver.id}
             driverId={driver.id}
             constructorImg={driver.constructor_img}
-            constructorName={driver.constructor_name}
+            constructorName={driver.constructor_name.replace('_', ' ')}
             numDrivers={driver.num_drivers}
             contIds={driverItems.indexOf(driver) + 1}
           />

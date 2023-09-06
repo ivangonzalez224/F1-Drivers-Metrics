@@ -126,7 +126,14 @@ If you like this project give it a ⭐️.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for the oportunity given to me to work in this project.
+I would like to thank Micoverse.
+
+<h3><b>Attribution</b></h3>
+
+- Title: Creative Commons
+- Author: Nelson Sakwa
+- Source: https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)
+- License: https://creativecommons.org/licenses/by-nc/4.0/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
