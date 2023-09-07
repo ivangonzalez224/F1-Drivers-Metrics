@@ -10,6 +10,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -24,7 +25,7 @@
 
 # 📖 F1 Drivers Metrics <a name="about-project"></a>
 
-**F1 Drivers Metrics** is a web app that allows users to filter numbers of drivers in Formula 1 by season and constructor (branc).
+**F1 Drivers Metrics** is a web app that allows users to filter numbers of drivers in Formula 1 by season and constructor (brand).
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -47,7 +48,17 @@ In this project we use React to build a F1 Drivers Metrics web app.
 ### Key Features <a name="key-features"></a>
 
 - Check number of drivers in Formula 1 by constructor.
-- Filter number of drivers by season.
+- Filter out the number of drivers by constructor.
+- Show detailed data for each season by filtered category
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+ The link to the project deployed and the presentation video:
+
+- [Live Demo Link](https://formula-1-metrics.onrender.com/)
+- [Project presentation video](https://www.loom.com/share/c95e3423632b4b4e93a4585f1b747151?sid=1b1b1169-a0d4-4411-881f-e73eb9537bbf)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
