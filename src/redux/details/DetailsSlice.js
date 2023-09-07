@@ -22,6 +22,11 @@ const initialState = {
 const detailsSlice = createSlice({
   name: 'detail',
   initialState,
+  reducers: {
+    initSeasons: (state, action) => {
+      state.detailItems = action.payload;
+    },
+  },
   extraReducers: (builder) => {
     builder.addCase(getDetails.fulfilled, (state, action) => {
       state.detailItems = action.payload;
@@ -31,4 +36,5 @@ const detailsSlice = createSlice({
     });
   },
 });
+export const { initSeasons } = detailsSlice.actions;
 export default detailsSlice.reducer;
