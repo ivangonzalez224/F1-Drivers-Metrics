@@ -1,20 +1,15 @@
 import { React, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import HomeItem from './HomeItem';
-import { getDrivers } from '../../redux/drivers/DriversSlice';
+import SearchBar from './SearchBar';
 import f1Logo from '../../assets/images/f1Icon.png';
 
 const HomeList = () => {
+  const myDrivers = useSelector((store) => store.drivers);
+  const totalSum = myDrivers.counter;
   const dispatch = useDispatch();
-  let { driverItems } = useSelector((store) => store.drivers);
-  useEffect(() => {
-    if (driverItems.length === 0) {
-      dispatch(getDrivers());
-    }
-  });
 
-  const sumTot = driverItems[driverItems.length - 1];
-  driverItems = driverItems.slice(0, -1);
+  useEffect(() => {}, [dispatch, totalSum]);
 
   return (
     <div className="home_lowerContainer">
@@ -23,23 +18,24 @@ const HomeList = () => {
         <div id="home_sum">
           <span id="home_title">FORMULA 1</span>
           <div>
-            <span>{sumTot}</span>
+            <span>{totalSum}</span>
             <span> drivers</span>
           </div>
         </div>
       </div>
+      <SearchBar />
       <div id="home_statsContainer">
         <span id="home_stats">STATS BY CONSTRUCTOR</span>
       </div>
       <div className="home_listItems">
-        {driverItems.map((driver) => (
+        {myDrivers.newList.map((driver) => (
           <HomeItem
             key={driver.id}
             driverId={driver.id}
             constructorImg={driver.constructor_img}
             constructorName={driver.constructor_name.replace('_', ' ')}
             numDrivers={driver.num_drivers}
-            contIds={driverItems.indexOf(driver) + 1}
+            contIds={myDrivers.newList.indexOf(driver) + 1}
           />
         ))}
       </div>

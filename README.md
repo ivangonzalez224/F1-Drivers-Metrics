@@ -58,7 +58,7 @@ In this project we use React to build a F1 Drivers Metrics web app.
  The link to the project deployed and the presentation video:
 
 - [Live Demo Link](https://formula-1-metrics.onrender.com/)
-- [Project presentation video](https://www.loom.com/share/c95e3423632b4b4e93a4585f1b747151?sid=1b1b1169-a0d4-4411-881f-e73eb9537bbf)
+- [Project presentation video](https://www.loom.com/share/dc26ae6211b742de92950a606518ea69?sid=3d1d8dd6-1abc-42dd-b4f0-5ca54108330c)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

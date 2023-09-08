@@ -14,11 +14,16 @@ const DetailsList = () => {
       dispatch(getDetails());
     }
   });
+  useEffect(() => {}, [dispatch, driverItems]);
   if (driverItems.length === 0) {
-    return (<p className="loading_content">The page could not be loaded. Please click on the top left the button ᐸ to come back to the home page</p>);
+    return (<p className="loading_content">Loading...</p>);
   }
-  const newDrivers = driverItems.filter((item) => item.constructor_name === driverId);
-  const newDetails = detailItems.filter((item) => item.constructor_name === driverId);
+  const newDrivers = driverItems.filter(
+    (item) => item.constructor_name.toLowerCase() === driverId.toLowerCase(),
+  );
+  const newDetails = detailItems.filter(
+    (item) => item.constructor_name.toLowerCase() === driverId.toLowerCase(),
+  );
 
   return (
     <div className="details_lowerContainer">
