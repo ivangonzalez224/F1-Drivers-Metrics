@@ -1,14 +1,19 @@
+import PropTypes from 'prop-types';
+import React from 'react';
 import '../../assets/styles/home.css';
 
-const SearchBar = ({name, filterName}) => (
+const SearchBar = ({ handleInput }) => (
   <div className="main_search">
     <input
       type="search"
-      value={name}
-      onChange={filterName}
-      placeholder="Search by constructor name" 
+      onChange={handleInput}
+      placeholder="Search by constructor name"
     />
   </div>
 );
+
+SearchBar.propTypes = {
+  handleInput: PropTypes.func.isRequired,
+};
 
 export default SearchBar;

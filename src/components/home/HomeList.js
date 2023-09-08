@@ -1,4 +1,4 @@
-import { React, useEffect } from 'react';
+import { React, useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import HomeItem from './HomeItem';
 import SearchBar from './SearchBar';
@@ -8,14 +8,34 @@ import f1Logo from '../../assets/images/f1Icon.png';
 const HomeList = () => {
   const dispatch = useDispatch();
   let { driverItems } = useSelector((store) => store.drivers);
+  const [filteredList, setFilteredList] = useState([]);
   useEffect(() => {
     if (driverItems.length === 0) {
       dispatch(getDrivers());
     }
-  });
+  }, []);
 
   const sumTot = driverItems[driverItems.length - 1];
   driverItems = driverItems.slice(0, -1);
+  let checkDriverItems = 0;
+  let updatedList = driverItems;
+  console.log(driverItems);
+  if (driverItems.length === 6) {
+    checkDriverItems += 1;
+    console.log(checkDriverItems);
+  }
+  if (checkDriverItems === 1) {
+    setFilteredList(updatedList);
+  }
+  const handleChange = (event) => {
+    const userInput = event.target.value;
+    updatedList = driverItems;
+    updatedList = updatedList.filter(
+      (item) => item.constructor_name.toLowerCase().includes(userInput.toLowerCase()),
+    );
+    setFilteredList(updatedList);
+    console.log(filteredList);
+  };
 
   return (
     <div className="home_lowerContainer">
@@ -29,12 +49,15 @@ const HomeList = () => {
           </div>
         </div>
       </div>
-      <SearchBar />
+      <SearchBar
+        handleInput={handleChange}
+      />
       <div id="home_statsContainer">
+        {/* {driverItems.length === 6 ? setFilteredList(updatedList) : console.log('está en 0')} */}
         <span id="home_stats">STATS BY CONSTRUCTOR</span>
       </div>
       <div className="home_listItems">
-        {driverItems.map((driver) => (
+        {filteredList.map((driver) => (
           <HomeItem
             key={driver.id}
             driverId={driver.id}

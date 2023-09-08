@@ -32,6 +32,21 @@
   font-weight: 900;
 }
 
+.main_search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 3%;
+}
+
+.main_search input {
+  width: 70%;
+  border-radius: 9px;
+  border: none;
+  padding: 2%;
+  font-size: 15px;
+}
+
 #home_statsContainer {
   width: 100%;
   background-color: #e04482;
