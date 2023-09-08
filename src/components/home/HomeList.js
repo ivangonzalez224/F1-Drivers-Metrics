@@ -1,6 +1,7 @@
 import { React, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import HomeItem from './HomeItem';
+import SearchBar from './SearchBar';
 import { getDrivers } from '../../redux/drivers/DriversSlice';
 import f1Logo from '../../assets/images/f1Icon.png';
 
@@ -28,6 +29,7 @@ const HomeList = () => {
           </div>
         </div>
       </div>
+      <SearchBar />
       <div id="home_statsContainer">
         <span id="home_stats">STATS BY CONSTRUCTOR</span>
       </div>
