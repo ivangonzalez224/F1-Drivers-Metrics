@@ -1,19 +1,23 @@
-import PropTypes from 'prop-types';
-import React from 'react';
+import { useDispatch } from 'react-redux';
+import { setFilteredArr } from '../../redux/drivers/DriversSlice';
 import '../../assets/styles/home.css';
 
-const SearchBar = ({ handleInput }) => (
-  <div className="main_search">
-    <input
-      type="search"
-      onChange={handleInput}
-      placeholder="Search by constructor name"
-    />
-  </div>
-);
+const SearchBar = () => {
+  const dispatch = useDispatch();
 
-SearchBar.propTypes = {
-  handleInput: PropTypes.func.isRequired,
+  const handleInput = (e) => {
+    dispatch(setFilteredArr(e.target.value));
+  };
+
+  return (
+    <div className="main_search">
+      <input
+        type="search"
+        onChange={(e) => { handleInput(e); }}
+        placeholder="Search by constructor name"
+      />
+    </div>
+  );
 };
 
 export default SearchBar;

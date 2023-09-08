@@ -40,11 +40,12 @@
 }
 
 .main_search input {
-  width: 70%;
+  width: 60%;
   border-radius: 9px;
   border: none;
   padding: 2%;
   font-size: 15px;
+  outline: none;
 }
 
 #home_statsContainer {
