@@ -1,0 +1,99 @@
+.main_home {
+  width: 100%;
+  display: flex;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  margin-top: 2%;
+  box-sizing: border-box;
+}
+
+.home_lowerContainer {
+  width: 100%;
+  background-color: #fa5294;
+}
+
+.home_topGeneral {
+  width: 100%;
+  margin-bottom: 2%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3%;
+}
+
+.home_topGeneral img {
+  width: 40%;
+  margin: 0 7%;
+}
+
+#home_title {
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.main_search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 3%;
+}
+
+.main_search input {
+  width: 60%;
+  border-radius: 9px;
+  border: none;
+  padding: 2%;
+  font-size: 15px;
+  outline: none;
+}
+
+#home_statsContainer {
+  width: 100%;
+  background-color: #e04482;
+  padding: 2% 0;
+}
+
+#home_stats {
+  margin-left: 1%;
+  font-weight: 900;
+}
+
+.home_listItems {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: #e04482;
+  box-sizing: border-box;
+}
+
+.home_itemContainer {
+  width: 95%;
+  padding: 1% 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.home_dataItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 29%;
+  margin-bottom: 5%;
+}
+
+.home_construcName {
+  font-size: 19px;
+  font-weight: 900;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.light_pink {
+  background-color: #d14479;
+}

@@ -1,0 +1,90 @@
+.main_details {
+  width: 100%;
+  display: flex;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  margin-top: 2%;
+  box-sizing: border-box;
+}
+
+.details_lowerContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #fa5294;
+}
+
+.details_topGeneral {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading_content {
+  width: 100%;
+  text-align: center;
+  font-size: 19px;
+}
+
+#details_sum {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.details_topGeneral img {
+  width: 40%;
+}
+
+#details_title {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+#details_statsContainer {
+  width: 100%;
+  background-color: #d14479;
+  padding: 2% 0;
+}
+
+#details_stats {
+  margin-left: 1%;
+  font-weight: 900;
+}
+
+.details_listItems {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #e04482;
+  box-sizing: border-box;
+}
+
+.details_itemContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 2%;
+}
+
+.details_itemRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.details_numContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 4%;
+}
+
+.details_numDrivers {
+  margin-right: 5%;
+}
+
+.dark {
+  background-color: #d14479;
+}

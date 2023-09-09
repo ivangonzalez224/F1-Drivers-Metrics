@@ -1,0 +1,50 @@
+nav {
+  width: 100%;
+  color: #fff;
+  height: 48px;
+}
+
+nav ul {
+  width: 100%;
+  padding: 0 1%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+nav ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-right: 1%;
+}
+
+nav ul #nav_left {
+  width: 25%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 18px;
+}
+
+nav ul #nav_title {
+  width: 50%;
+  justify-content: center;
+}
+
+nav ul #nav_mic {
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+a {
+  margin-right: 3%;
+}
+
+.active {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
